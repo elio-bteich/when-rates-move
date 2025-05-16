@@ -1,11 +1,31 @@
-# Sources de données – Projet TEMP_DALAS_NO_NAME
+## When Rates Move
+
+> **A Sorbonne M1 Data Science project** – How every tweak in U.S. interest rates ripples through jobs, housing, spending, and markets.
+
+### About
+
+This repository hosts the coursework project for our **first-year Master’s in Data Science, Machine Learning & AI** at **Sorbonne University**.  
+Developed by **Elio Bteich & Abderraouf Touzene**, it turns public data into clear answers to one question:
+
+> *What really happens across the U.S. economy when the Fed moves rates?*
+
+### Key points
+
+| 🚀 Feature | 💡 Detail |
+|-----------|-----------|
+| **End-to-end ETL** | Python scripts pull fresh data |
+| **Clean notebooks** | Exploratory visuals (lagged-correlation heatmaps, dashboards) & walk-forward tests. |
+| **Predictive baselines** | Autoregressive models, evaluation on unseen (“hold-out”) data. |
+| **report** | Report in french describing our analysis. |
+
+### Sources de données
 
 > Toutes les URL pointent vers les pages officielles des séries ou fichiers.  
 > Les libellés entre parenthèses indiquent la fréquence ou le format principal (mensuel, trimestriel, CSV, etc.).
 
 ---
 
-## 1. Taux d’intérêt & Politique monétaire
+#### 1. Taux d’intérêt & Politique monétaire
 | Indicateur | Source |
 |------------|--------|
 | Fed Funds Rate (mensuel, %) | <https://fred.stlouisfed.org/data/FEDFUNDS> |
@@ -14,14 +34,14 @@
 
 ---
 
-## 2. Inflation
+#### 2. Inflation
 | Indicateur | Source |
 |------------|--------|
 | CPI & inflation calculator (BLS/Minneapolis Fed) | <https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-> |
 
 ---
 
-## 3. Marché du travail
+#### 3. Marché du travail
 | Indicateur | Source |
 |------------|--------|
 | Unemployment Rate (UNRATE, %) | <https://fred.stlouisfed.org/data/UNRATE> |
@@ -30,7 +50,7 @@
 
 ---
 
-## 4. Immobilier
+#### 4. Immobilier
 | Indicateur | Source |
 |------------|--------|
 | Indice Case-Shiller (CSUSHPINSA) | <https://fred.stlouisfed.org/data/CSUSHPINSA> |
@@ -38,7 +58,7 @@
 
 ---
 
-## 5. Consommation & Ventes au détail  
+#### 5. Consommation & Ventes au détail  
 *(toutes les séries FRED sont mensuelles et non ajustées sauf mention)*
 
 | Catégorie | FRED ID | Lien |
@@ -55,7 +75,7 @@
 
 ---
 
-## 6. Épargne & Finances des ménages
+#### 6. Épargne & Finances des ménages
 | Indicateur | Source |
 |------------|--------|
 | Personal Saving Rate (PSAVERT, %) | <https://fred.stlouisfed.org/series/PSAVERT> |
@@ -63,7 +83,7 @@
 
 ---
 
-## 7. Marchés financiers & Investissement
+#### 7. Marchés financiers & Investissement
 | Indicateur | Source |
 |------------|--------|
 | S&P 500 (historique) | API Yahoo Finance |
@@ -76,7 +96,7 @@
 
 ---
 
-## 8. Activité économique agrégée
+#### 8. Activité économique agrégée
 | Indicateur | Source |
 |------------|--------|
 | PIB (GDP) | <https://fred.stlouisfed.org/data/GDP> |
@@ -86,7 +106,7 @@
 
 ---
 
-## 9. Environnement & Énergie
+#### 9. Environnement & Énergie
 | Indicateur | Source |
 |------------|--------|
 | Émissions de GES mondiales (1970-2024) | <https://www.statista.com/statistics/1285502/annual-global-greenhouse-gas-emissions/> |
@@ -94,14 +114,17 @@
 
 ---
 
-## 10. Construction & Immobilier (complément)
+#### 10. Construction & Immobilier (complément)
 | Indicateur | Source |
 |------------|--------|
 | Dépenses totales de construction (TTLCONS) | <https://fred.stlouisfed.org/series/TTLCONS> |
 
 ---
 
-## 11. Santé
+#### 11. Santé
 | Indicateur | Source |
 |------------|--------|
 | Health-Care Satellite Account (BEA) | <https://www.bea.gov/data/special-topics/health-care> |
+
+---
+Note: Not all data described here have been studied in our pipeline...
